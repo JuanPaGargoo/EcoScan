@@ -6,11 +6,27 @@ tierra clara: #845217
 tierra obscura: #714204
 Casi negro: #1a1d25
 blanco: #ffffff  */
+body {
+    background-image: url('img/fondoPagina.png');
+    background-size: cover; /* Para ajustar la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Para evitar que se repita la imagen */
+    background-attachment: fixed; /* Para mantener la imagen fija en su lugar al desplazarse la página */
+}
+
 .header{
     background-color: #72a611;
 }
+
+.btn-header{
+    margin: 2px 30px 2px 5px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    
+}
 .header-img{
-    margin: 2px 10px 2px 10px;
     height: 30px;
     width: 30px;
     
@@ -30,51 +46,65 @@ h1{
     font-size: 100px;
     margin: 50px 10px 2px 10px;
 }
+.section-form{
+    display:flex;  
+    align-items: center;
+    justify-content: center;    
+}
 
 .form{
     display:flex;  
     align-items: center;
     justify-content: center;
-}
-.icon{
-    height: 30px;
-    width: 30px; 
-    margin: 2px 10px 2px 10px;   
-}
-.form-input{
     width: 600px;
     height: 40px;
     border-radius: 30px;
     border-style: solid;
     border-width: 1px;
     border-color: #d1d1d1;
+    
 }
-.form-btnSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.form-input{
+    width: 520px;
+    height: 40px;
+    border-color: transparent;
+    background-color: transparent;
+    
 }
-.btn{
-    margin: 0 0 0 10px;
-    background-color: #ffffff;
+#input-buscar:focus{
+    outline: none;
 }
+.btn-buscar{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    margin: 2px 0 2px 0;
+
+}
+.icon{
+    height: 30px;
+    width: 30px;     
+}
+
+
+
 .footer{
     background-color: #ededed;
     width: 100%;
     position: absolute;
     bottom: 0;
     padding: 15px;
-    border-bottom: 1px solid #b8b8b8; 
-    color: #858585;
+    border-bottom: 1px solid #b8b8b8;
+    display:flex;  
+    align-items: center;
+    justify-content: center;
+    
 }
 .footer-a{
     margin-left: 20px;
     text-decoration: none;
     color: #858585;
 
-}
-.pais{
-    display: flex;
-    align-items: center;
-    
 }
