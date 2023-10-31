@@ -1,0 +1,275 @@
+
+@charset "UTF-8";
+/* 
+Reset CSS 
+Youtube 👉 https://www.youtube.com/watch?v=Foieq2jTajE 
+Github  👉 https://github.com/eduardofierropro/Reset-CSS
+*/
+
+:root {
+--negro: #393939;
+--tipo-principal: Helvetica, Arial, sans-serif;
+--tipo-secundaria: Verdana;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+--negro: #ececec;
+}
+}
+@media (prefers-reduced-motion: reduce) {
+* {
+-webkit-animation: none !important;
+animation: none !important;
+-webkit-transition: none !important;
+transition: none !important;
+}
+}
+* {
+margin: 0;
+padding: 0;
+border: 0;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+vertical-align: baseline;
+}
+img, picture, video, iframe, figure {
+max-width: 100%;
+width: 100%;
+display: block;
+-o-object-fit: cover;
+object-fit: cover;
+-o-object-position: center center;
+object-position: center center;
+}
+a {
+display: block;
+text-decoration: none;
+color: inherit;
+font-size: inherit;
+}
+
+p a {
+display: inline;
+}
+
+li {
+list-style-type: none;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+font-size: 1em;
+font-weight: inherit;
+font-style: inherit;
+text-decoration: none;
+color: inherit;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+content: "";
+content: none;
+}
+
+::-moz-selection {
+background-color: var(--negro);
+color: var(--blanco);
+}
+::selection {
+background-color: var(--negro);
+color: var(--blanco);
+}
+
+form, input, textarea, select, button, label {
+font-family: inherit;
+font-size: inherit;
+-webkit-hyphens: auto;
+-ms-hyphens: auto;
+hyphens: auto;background-color: transparent;display: block;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+table, tr, td {border-collapse: collapse;border-spacing: 0;
+}
+
+svg {
+width: 100%;
+display: block;
+fill: currentColor;
+}
+body {
+min-height: 100vh;
+font-size: 100%;
+font-family: var(--tipo-principal);
+font-smooth: always;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+}
+/*  Colores
+verde pricipal: #72a611
+verde azulado: #216b5d
+verde planta: #8bc912
+tierra clara: #845217
+tierra obscura: #714204
+Casi negro: #1a1d25
+blanco: #ffffff  */
+
+/*Codigo*/
+body{
+    background-image: url('../img/fondoPagina.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.button:hover{
+    cursor: pointer;
+}
+.header{
+    width: 100%;
+    background-color: #72a611;
+    padding:  1em;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+.header .a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .a .p{
+    margin-left: 10px;
+    font-size: 25px;
+}
+.header .a .img{
+    width: 3em;
+    height: 3em;
+}
+
+.header .button{
+    display: block;
+}
+.header .svg{
+    width: 3em;
+    height: 3em;
+    fill: white;
+}
+
+.header .nav{
+    width: 100%;
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .3s ease;
+
+    display: flex;
+    flex-flow:nowrap;
+    justify-content: end;
+    align-items: center;
+}
+.header .nav.activo{
+    margin-top: 5px;
+    height: 3vh;
+    pointer-events: auto;
+}
+.header .ul{
+    display: flex;
+
+}
+.header .li{
+    padding-left: 1em;
+}
+
+.div-logo{
+    display:flex;  
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 95px;
+    padding-bottom: 20px;
+    
+}
+#img-logo{
+    width: 200px;
+    
+}
+h2{
+    font-size: 100px;
+    margin: 50px 10px 2px 10px;
+}
+.div-form{
+    display:flex;  
+    align-items: center;
+    justify-content: center;    
+}
+
+.form{
+    display:flex;  
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d1d1d1;
+    
+}
+.form-input{
+    width: 520px;
+    height: 40px;
+    border-color: transparent;
+    background-color: transparent;
+    
+}
+#input-buscar:focus{
+    outline: none;
+}
+.form .button{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    margin: 2px 0 2px 0;
+
+}
+.div-form .button .svg{
+    height: 30px;
+    width: 30px;     
+}
+
+
+
+.footer{
+    background-color: #ededed;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    border-bottom: 1px solid #b8b8b8;
+    display:flex;  
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer .a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #858585;
+
+}
+
+
+
+
+
