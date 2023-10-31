@@ -125,6 +125,7 @@ body{
     background-image: url('../img/fondoPagina.png');
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 .button:hover{
     cursor: pointer;
@@ -195,10 +196,13 @@ body{
     justify-content: center;
     width: 100%;
     padding-top: 95px;
-    padding-bottom: 20px;
+    transition: all .3s ;
     
 }
-#img-logo{
+.div-logo.desc{
+    display: none;
+}
+.div-logo .img{
     width: 200px;
     
 }
@@ -209,7 +213,8 @@ h2{
 .div-form{
     display:flex;  
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    margin-top: 30px;    
 }
 
 .form{
@@ -247,9 +252,25 @@ h2{
     height: 30px;
     width: 30px;     
 }
+.div-products{
+    height: 100%;
+}
 
+.div-products .ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.div-products .ul .li{
+    display: flex;
+    justify-content: center;
+    margin: 10px 5px;
+}
 
+.filtro{
+    display: none;
+}
 .footer{
     background-color: #ededed;
     width: 100%;
