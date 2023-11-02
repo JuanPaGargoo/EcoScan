@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <img src="" alt="">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoScan</title>
     <link rel="shorcut icon" href="../img/iconEcoScan.ico">
     <link rel="stylesheet" href="../css/paginaPrincipal.css">
+    <link rel="stylesheet" href="../css/alert.css">
     <script defer src="../js/paginaPrincipal.js"></script>
 </head>
 <body>
@@ -34,11 +36,11 @@
     <main class="main">
         <div class="div-logo">
             <img id="img-logo" class="img" src="../img/logoEcoScan.png"  alt="logo">
-            <h2>EcoScan</h2>
+            <h2 class="h2">EcoScan</h2>
         </div>
         <div class="div-form">
             <form class="form" action="">
-                <input id="input-buscar" class="form-input" type="text" placeholder="Buscar">
+                <input id="input-buscar" class="form-input" type="text" placeholder="Buscar" autocomplete="off">
                 <button class="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -49,7 +51,76 @@
         </div>
         <div class="div-products">
             <ul class="ul">
-                <li class="li"><a href="" class="product"><img src="" alt=""></a></li>
+                <!--1-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/ShampooAloeMango.png" alt="" class="img">
+                        Shampoo Aloe y Mango
+                    </button>
+                </li>
+                <!--2-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/AcondicionadorCreCantu.png" alt="" class="img">
+                        Acondicionador Cremoso
+                    </button>
+                </li>
+                <!--3-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/GelLimpiadorCerave.png" alt="" class="img">
+                        Gel Limpiador Espumoso
+                    </button>
+                </li>
+                <!--4-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/CetaphilLocionHumectante.png" alt="" class="img">
+                        Cetaphil Loción Humectante
+                    </button>
+                </li>
+                <!--5-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/FactoresBETATheOrdinary.png" alt="" class="img">
+                        Factores hidratantes naturales 
+                    </button>
+                </li>
+                <!--6-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/DercosShampooVichy.png" alt="" class="img">
+                        Dercos Shampoo Anti-Caspa
+                    </button>
+                </li>
+                <!--7-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/ExtraStrengthCoconutOilShampooOGX.png" alt="" class="img">
+                        Coconut Miracle Oil Shampoo
+                    </button>
+                </li>
+                <!--8-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/CremaFacilaHyalAcBarbaria.png" alt="" class="img">
+                        Crema Facial Hyaluronic Acid
+                    </button>
+                </li>
+                <!--9-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/AceiteCocoSkinnyCo.png" alt="" class="img">
+                        Aceite de coco
+                    </button>
+                </li>
+                <!--10-->
+                <li class="product">
+                    <button href="" class="product-b">
+                        <img src="../img/productos/GentleMoistruriserEthicalBeauty.png" alt="" class="img">
+                        Gentle Moisturiser
+                    </button>
+                </li>
             </ul>
         </div>
         
@@ -58,5 +129,7 @@
         </footer>
         
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/sweetAlert.js"></script>
 </body>
 </html>
