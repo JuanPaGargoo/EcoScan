@@ -241,9 +241,28 @@ html{
 }
 
 .parrafeado{
-    padding-top: 10px;
+    padding-top: 30px;
     padding-left: 10px;
+    padding-right: 10px;
     font-size: 1.1em;
+}
+
+.imgColumna1{
+    width: 200px;
+    height: 200px;
+    float: right;   
+}
+
+.imgColumna2{
+    width: 150px;
+    height: 150px;
+    float: right;   
+    padding-right: 35px;
+}
+
+.lista{
+    padding-top: 7px;
+    padding-left: 30px;
 }
 
 .footer{
