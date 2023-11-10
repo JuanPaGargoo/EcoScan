@@ -121,21 +121,37 @@ Casi negro: #1a1d25
 blanco: #ffffff  */
 
 /*Codigo*/
-body{
-    background-image: url('../img/fondoPagina.png');
-    background-size: cover;
+html{
+    background-image: linear-gradient(
+        to top ,
+        #1a1d25 0%,
+        #174b42 15%,
+        #216b5d 30%,
+        #72a611 60%,
+        #8bc912 70%
+    );
+    background-size: 200% 200%;
+    animation: movimiento 14s linear infinite alternate-reverse;
     background-repeat: no-repeat;
     background-attachment: fixed;
     justify-content: center;
     text-align: center;
 
 }
+@keyframes movimiento {
+    from{
+        backgroud-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
 .button:hover{
     cursor: pointer;
 }
 .header{
     width: 100%;
-    background-color: #72a611;
+    background-color: transparent;
     padding:  1em;
 
 
@@ -203,7 +219,7 @@ body{
     justify-content: baseline;
     align-items: center;
     margin: 2% 10%;
-    background-color: rgb(235, 235, 235);
+    background-color: transparent;
     opacity: 0.75;
     border-radius: 15px;
     overflow-y: scroll;
@@ -221,7 +237,7 @@ body{
     margin: 10px 0;
     background-color: rgb(188, 187, 187);
     opacity: 0.90;
-    border-radius: 15px;
+    border-radius: 40px;
     
     display: flex;
     flex-flow: column nowrap;
@@ -253,10 +269,10 @@ body{
     width: 30%;
     height: 100%;
     margin: 10px;
-    background-color: rgb(112, 111, 111);
-    opacity: 0.90;
-    border-radius: 15px;
-    color: white;
+    background-color: rgb(209, 209, 209);
+    opacity: 0.80;
+    border-radius: 40px;
+    color: black;
     font-size: 17px;
 }
 .img-developer{
@@ -266,7 +282,7 @@ body{
 .estudiante{
     margin: 10px;
     font-size: 15px;
-    color:black;
+    color:rgb(92, 92, 92);
 }
 .acercaDe-contenido,
 .mision-contenido,
@@ -303,11 +319,11 @@ body{
 
 
 .footer{
-    background-color: #ededed;
+    background-color: transparent;
     width: 100%;
     position: fixed;
     bottom: 0;
-    padding: 15px;
+    padding: 5px;
     border-bottom: 1px solid #b8b8b8;
     display:flex;  
     align-items: center;
@@ -317,11 +333,15 @@ body{
 .footer .a{
     margin-left: 20px;
     text-decoration: none;
-    color: #858585;
+    color: white;
+    opacity: 30%;
+    transition: all 0.5s;
+
 
 }
 .footer .a:hover{
-
-    color: #474747;
+    font-size: 25px;
+    color: white;
+    opacity: 100%;
 
 }
